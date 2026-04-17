@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 1B - Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <article data-testid="test-profile-card" class="profile-card">
+            
+            <figure class="avatar-container">
+                <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?semt=ais_hybrid&w=740&q=80" alt="User Profile Avatar" data-testid="test-user-avatar">
+            </figure>
+
+            <div class="profile-content">
+                <header>
+                    <h2 data-testid="test-user-name">Trey Smith</h2>
+                    <p data-testid="test-user-bio">Frontend enthusiast and aspiring UI/UX wizard. Passionate about clean code, accessibility, and modern design patterns.</p>
+                </header>
+
+                <div class="time-display">
+                    <span>Current Epoch:</span>
+                    <strong data-testid="test-user-time" id="current-time" aria-live="polite"></strong>
+                </div>
+
+                <nav data-testid="test-user-social-links" class="social-nav">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+                </nav>
+
+                <div class="lists-container">
+                    <section>
+                        <h3>Hobbies</h3>
+                        <ul data-testid="test-user-hobbies">
+                            <li>Coding</li>
+                            <li>Gaming</li>
+                            <li>Photography</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Dislikes</h3>
+                        <ul data-testid="test-user-dislikes">
+                            <li>Unstructured data</li>
+                            <li>Bad contrast</li>
+                            <li>Slow internet</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile-card {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e8f0;
+}
+
+.avatar-container {
+    width: 100%;
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-content {
+    padding: 32px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+p {
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    background: #f1f5f9;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.social-nav a {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.social-nav a:hover {
+    background: #1d4ed8;
+}
+
+.social-nav a:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+.lists-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 24px;
+}
+
+h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "•";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+    .profile-card {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+    .avatar-container {
+        width: 40%;
+    }
+
+    .avatar-container img {
+        height: 100%;
+    }
+
+    .profile-content {
+        width: 60%;
+    }
+}
